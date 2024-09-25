@@ -49,7 +49,9 @@
             if ( $i >= 15 ) {
                 break;
             }
-            $lite .= $key.("warpkeys": [ $key !== end($keys) ? ",\n]" : "");
+            $lite .= $key.( $key !== end($keys) ? "{
+   "warpkeys": [,\n]
+}" : "");
             $i++;
         }
         file_put_contents("lite.json", $lite);
