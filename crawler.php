@@ -41,5 +41,6 @@
             $i++;
         }
         file_put_contents("plus/lite", $lite);
+        file_put_contents("ip.json", $lite);
 
     }
