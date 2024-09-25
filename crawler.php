@@ -41,6 +41,17 @@
             $i++;
         }
         file_put_contents("plus/lite", $lite);
-        file_put_contents("ip.json", $lite);
+
+        $i = 0;
+        $lite = "";
+        shuffle($keys);
+        foreach($keys as $key) {
+            if ( $i >= 15 ) {
+                break;
+            }
+            $lite .= $key.( $key !== end($keys) ? ",\n" : "");
+            $i++;
+        }
+        file_put_contents("lite.json", $lite);
 
     }
