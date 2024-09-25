@@ -31,8 +31,8 @@ function renderData(dataArray) {
         }
     });
     let loadMore = '<div class="clearfix"></div>';
-    loadMore += '<a class="btn btn-warning btn-block" href="https://github.com/ircfspace/endpoint/blob/main/ip.json" dir="rtl" target="_blank">';
-    loadMore += 'مشاهده بیشتر';
+    loadMore += '<a class="btn btn-warning btn-block" href="https://github.com/nyeinkokoaung404/warpkeys/blob/main/ip.json" dir="rtl" target="_blank">';
+    loadMore += 'View more';
     loadMore += '</a>';
     $('#setContent').html(html+loadMore);
 }
@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
     if (cachedData !== "undefined" && cachedTime !== "undefined" && (Date.now() - cachedTime < 15 * 60 * 1000)) {
         renderData(cachedData);
     } else {
-        fetch('https://raw.githubusercontent.com/ircfspace/endpoint/main/ip.json')
+        fetch('https://raw.githubusercontent.com/nyeinkokoaung404/warpkeys/main/ip.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
