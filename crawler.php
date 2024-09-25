@@ -49,7 +49,7 @@
             if ( $i >= 15 ) {
                 break;
             }
-            $lite .= "{\n" $key.( $key !== end($keys) ? "\n}" : "");
+            $lite .= " $key.( $key !== end($keys) ? "\n" : "}");
             $i++;
         }
         file_put_contents("lite.json", $lite);
