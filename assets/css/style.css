@@ -5,7 +5,7 @@ body {
 input,
 select,
 textarea {
-	direction: rtl;
+	direction: ltr;
 	text-align: right;
 	margin: 10px 0;
 	width: 100%;
